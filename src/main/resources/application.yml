@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: tennis
+  config:
+    import:
+    - classpath:application-key.yml
+  datasource:
+    url: jdbc:mysql://mysql:3306/tennis
+  data:
+    redis:
+      host: redis
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+
+
+server:
+    servlet:
+      jsp:
+        init-parameters:
+          development: true
